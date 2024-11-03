@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf0e6;
+    text-align: center;
+}
+#profile-selection {
+    padding: 20px;
+}
+#profile-selection img {
+    width: 150px;
+    cursor: pointer;
+}
+#chat-container {
+    margin-top: 20px;
+}
+#messages {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: #ffffff;
+}
+#message-input {
+    width: 60%;
+    padding: 10px;
+}
+button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+}

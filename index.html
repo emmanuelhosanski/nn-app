@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Nounours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Écran de sélection de profil -->
+    <div id="profile-selection">
+        <h1>Choisis ton Nounours</h1>
+        <div>
+            <img src="images/nounours_homme.png" alt="Nounours Homme" onclick="selectProfile('homme')">
+            <img src="images/nounours_femme.png" alt="Nounours Femme" onclick="selectProfile('femme')">
+        </div>
+    </div>
+
+    <!-- Messagerie -->
+    <div id="chat-container" style="display:none;">
+        <div id="messages"></div>
+        <input type="text" id="message-input" placeholder="Écris un message..." />
+        <button onclick="sendMessage()">Envoyer</button>
+        <button onclick="addImage()">Image</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
