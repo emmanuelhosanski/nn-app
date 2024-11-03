@@ -1,36 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nounours Messaging App</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
+<!-- index.html -->
 <body>
-  <div id="startScreen">
-    <h1>Select Your Profile</h1>
-    <div id="profileSelection">
-      <button data-profile="Nounours Homme">Nounours Homme 🐻</button>
-      <button data-profile="Nounours Femme">Nounours Femme 🐻</button>
+    <div class="container" id="startScreen">
+      <h1>Select Your Profile</h1>
+      <div id="profileSelection">
+        <button data-profile="Nounours Homme">Nounours Homme 🐻</button>
+        <button data-profile="Nounours Femme">Nounours Femme 🐻</button>
+      </div>
     </div>
-  </div>
-
-  <div id="chatScreen">
-    <h2>Chat</h2>
-    <div id="messagesContainer"></div>
-    <input type="text" id="messageInput" placeholder="Type a message...">
-    <button id="sendMessageButton">Send</button>
-    <button onclick="showReminderScreen()">Reminders</button>
-    <div id="easterEgg">🐻</div>
-  </div>
-
-  <div id="reminderScreen">
-    <h2>Reminders</h2>
-    <div id="reminderList"></div>
-    <button id="addReminderButton">Add Reminder</button>
-    <button onclick="showChatScreen()">Back to Chat</button>
-  </div>
-
-  <script src="script.js" type="module"></script>
-</body>
-</html>
+  
+    <div class="container" id="chatScreen">
+      <h2>Chat</h2>
+      <div id="messagesContainer"></div>
+      <input type="text" id="messageInput" placeholder="Type a message...">
+      <button id="sendMessageButton">Send</button>
+      <button onclick="showReminderScreen()">Reminders</button>
+      <div id="easterEgg">🐻</div>
+    </div>
+  
+    <div class="container" id="reminderScreen">
+      <h2>Reminders</h2>
+      <div id="reminderList"></div>
+      <button id="addReminderButton">Add Reminder</button>
+      <button onclick="showChatScreen()">Back to Chat</button>
+    </div>
+  
+    <script src="script.js" type="module"></script>
+  </body>
+  
