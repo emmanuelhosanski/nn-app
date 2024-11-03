@@ -1,33 +1,42 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #faf0e6;
-    text-align: center;
-}
-#profile-selection {
-    padding: 20px;
-}
-#profile-selection img {
-    width: 150px;
-    cursor: pointer;
-}
-#chat-container {
-    margin-top: 20px;
-}
-#messages {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 10px;
-    border: 1px solid #ccc;
-    height: 300px;
-    overflow-y: scroll;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #startScreen, #chatScreen, #reminderScreen {
+    display: none;
     background-color: #ffffff;
-}
-#message-input {
-    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  button {
     padding: 10px;
-}
-button {
-    margin-top: 10px;
-    padding: 8px 15px;
-    font-size: 16px;
-}
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #ffffff;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #messagesContainer, #reminderList {
+    margin: 20px 0;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fafafa;
+  }

@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Nounours</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nounours Messaging App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Écran de sélection de profil -->
-    <div id="profile-selection">
-        <h1>Choisis ton Nounours</h1>
-        <div>
-            <img src="images/nounours_homme.png" alt="Nounours Homme" onclick="selectProfile('homme')">
-            <img src="images/nounours_femme.png" alt="Nounours Femme" onclick="selectProfile('femme')">
-        </div>
+  <div id="startScreen">
+    <h1>Select Your Profile</h1>
+    <div id="profileSelection">
+      <button data-profile="Nounours Homme">Nounours Homme 🐻</button>
+      <button data-profile="Nounours Femme">Nounours Femme 🐻</button>
     </div>
+  </div>
 
-    <!-- Messagerie -->
-    <div id="chat-container" style="display:none;">
-        <div id="messages"></div>
-        <input type="text" id="message-input" placeholder="Écris un message..." />
-        <button onclick="sendMessage()">Envoyer</button>
-        <button onclick="addImage()">Image</button>
-    </div>
+  <div id="chatScreen">
+    <h2>Chat</h2>
+    <div id="messagesContainer"></div>
+    <input type="text" id="messageInput" placeholder="Type a message...">
+    <button id="sendMessageButton">Send</button>
+    <button onclick="showReminderScreen()">Reminders</button>
+    <div id="easterEgg">🐻</div>
+  </div>
 
-    <script src="script.js"></script>
+  <div id="reminderScreen">
+    <h2>Reminders</h2>
+    <div id="reminderList"></div>
+    <button id="addReminderButton">Add Reminder</button>
+    <button onclick="showChatScreen()">Back to Chat</button>
+  </div>
+
+  <script src="script.js" type="module"></script>
 </body>
 </html>
